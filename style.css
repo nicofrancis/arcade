@@ -1,0 +1,180 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsla(212, 84%, 61%, 1);
+
+  background: linear-gradient(
+    360deg,
+    hsla(212, 84%, 61%, 1) 0%,
+    hsla(229, 83%, 60%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    360deg,
+    hsla(212, 84%, 61%, 1) 0%,
+    hsla(229, 83%, 60%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    360deg,
+    hsla(212, 84%, 61%, 1) 0%,
+    hsla(229, 83%, 60%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4895EF", endColorstr="#4361EE", GradientType=1 );
+}
+
+#board {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background: hsla(243, 57%, 50%, 1);
+
+  background: linear-gradient(
+    0deg,
+    hsla(243, 57%, 50%, 1) 42%,
+    hsla(229, 83%, 60%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(243, 57%, 50%, 1) 42%,
+    hsla(229, 83%, 60%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(243, 57%, 50%, 1) 42%,
+    hsla(229, 83%, 60%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3F37C9", endColorstr="#4361EE", GradientType=1 );
+  padding: 15px;
+}
+
+#title {
+  font-size: 5rem;
+  font-family: "Permanent Marker", cursive;
+  margin: 0px;
+  color: hsla(258, 86%, 34%, 1);
+
+  color: radial-gradient(
+    circle,
+    hsla(258, 86%, 34%, 1) 0%,
+    hsla(243, 57%, 50%, 1) 50%
+  );
+
+  color: -moz-radial-gradient(
+    circle,
+    hsla(258, 86%, 34%, 1) 0%,
+    hsla(243, 57%, 50%, 1) 50%
+  );
+
+  color: -webkit-radial-gradient(
+    circle,
+    hsla(258, 86%, 34%, 1) 0%,
+    hsla(243, 57%, 50%, 1) 50%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3A0CA3", endColorstr="#3F37C9", GradientType=1 );
+}
+
+#winnerMsg {
+  font-family: "Courier New", Courier, monospace;
+  color: #f72585;
+}
+#whosUp {
+  font-family: "Courier New", Courier, monospace;
+  color: #f72585;
+  font-weight: bold;
+  background-color: #3f37c9;
+  padding: 9px;
+  border-radius: 1rem;
+}
+
+.tileSquare {
+  color: #f72585;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-family: "Permanent Marker", cursive;
+}
+
+.right-border {
+  border-right: 5px solid #3a0ca3;
+}
+.bottom-border {
+  border-bottom: 5px solid #3a0ca3;
+}
+
+#ctrl-center {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 15px;
+  width: 450px;
+  margin: 50px;
+  margin-left: 50px;
+  border-radius: 2rem;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+}
+
+#reset-game {
+  background: #f72585;
+  border: 1px solid #f72585;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 12px 14px;
+}
+
+#reset-game:hover {
+  background-color: initial;
+  font-size: 17px;
+  color: #f72585;
+  background: #f72585;
+  color: #ffffff;
+  border: 1px solid white;
+  box-shadow: rgba(255, 255, 255, 0.154) 0px 2px 2px;
+}
+
+#start-game {
+  background: #f72585;
+  border: 1px solid #f72585;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 12px 14px;
+}
+
+#start-game:hover {
+  background-color: initial;
+  font-size: 17px;
+  color: #f72585;
+  background: #f72585;
+  color: #ffffff;
+  border: 1px solid white;
+  box-shadow: rgba(255, 255, 255, 0.154) 0px 2px 2px;
+}
+
+.people {
+  color: #f4a261;
+  margin: 5px;
+}
